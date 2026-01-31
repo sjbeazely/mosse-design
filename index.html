@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosse Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <img src="branch-logo.png" alt="Mosse Design Logo" class="logo">
+            <h1>MOSSE DESIGN</h1>
+            <p>Landscape Design for Living Well</p>
+        </div>
+    </section>
+
+    <!-- CONTACT BUTTON -->
+    <button class="contact-btn" onclick="openForm()">Contact</button>
+
+    <!-- POPUP CONTACT FORM -->
+    <div id="contactForm" class="form-popup">
+        <form class="form-container" action="https://formsubmit.co/sjbeazely@gmail.com" method="POST">
+
+            <!-- FormSubmit settings -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Inquiry from Mosse Design Website">
+
+            <h2>Get in Touch</h2>
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Phone</label>
+            <input type="text" name="phone" required>
+
+            <label>Message</label>
+            <textarea name="message" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
