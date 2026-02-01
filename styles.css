@@ -13,14 +13,12 @@
 .contact-hotspot {
     position: absolute;
 
-    /* Center horizontally */
     left: 50%;
     transform: translateX(-50%);
 
-    /* Adjust vertical position */
-    bottom: 40px; /* we can fine‑tune this */
+    bottom: 55px; /* moved up slightly */
 
-    width: 160px;  /* slightly wider for easier tapping */
+    width: 160px;
     height: 55px;
 
     opacity: 0;
