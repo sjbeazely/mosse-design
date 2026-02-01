@@ -1,48 +1,25 @@
-/* Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: serif;
-}
-
-/* Hero Section */
 .hero {
+    position: relative;
+    width: 100%;
     height: 100vh;
-    background-image: url('hero.jpg'); /* Make sure this filename matches exactly */
+
+    background-image: url('hero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center; /* keeps the important part centered */
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
 }
 
-/* Content */
-.content h1 {
-    font-size: 3rem;
-    letter-spacing: 3px;
-    margin: 0;
-}
+/* Invisible clickable area over the black button */
+.contact-hotspot {
+    position: absolute;
 
-.tagline {
-    font-size: 1.2rem;
-    margin: 10px 0 30px;
-}
+    /* Adjust these to match the button location */
+    bottom: 40px;
+    right: 20px;
 
-/* Contact Button */
-.contact-btn {
-    background-color: #0f3d2e; /* deep green */
-    color: white;
-    padding: 12px 28px;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 4px;
-    transition: 0.3s ease;
-}
+    width: 140px;
+    height: 50px;
 
-.contact-btn:hover {
-    background-color: #0c2f24;
+    opacity: 0;
+    cursor: pointer;
 }
