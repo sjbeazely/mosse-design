@@ -16,11 +16,17 @@
     left: 50%;
     transform: translateX(-50%);
 
-    bottom: 55px; /* moved up slightly */
+    bottom: 75px; /* moved up more */
 
     width: 160px;
     height: 55px;
 
     opacity: 0;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background-position: center top;
+  }
 }
