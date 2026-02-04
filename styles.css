@@ -30,3 +30,24 @@
     background-position: center top;
   }
 }
+
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        background-position: center top; /* adjust to top, center, or 30% depending on your image */
+        height: 100vh;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .contact-button {
+        margin-top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+}
